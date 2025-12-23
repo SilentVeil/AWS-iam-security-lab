@@ -10,7 +10,7 @@ Hands-on lab implementing AWS Identity and Access Management (IAM) security best
 - Understand IAM policy evaluation logic
 
 ## 📊 Architecture
-![IAM Architecture Diagram](images/iam-architecture.png) COMING SOON 
+![IAM Architecture Diagram](images/iam-architecture.png)
 
 ## 🛠️ Technologies & Services
 - **AWS IAM**
