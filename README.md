@@ -67,12 +67,19 @@ Designed policies that:
 - [ ] Automate policy reviews with AWS Config
 - [ ] Add emergency break-glass procedures
 
+## 📸 Implementation Proof
+Screenshots of the implemented configuration are available in the [screenshots/](screenshots/) folder:
+- AWS Console configurations
+- Service dashboards
+- Security settings
+
 ---
 
 ## 👨‍💻 About the Author
 **Renaldi**  
 Cloud Security Learner | AWS Enthusiast  
-[LinkedIn Profile](https://linkedin.com/in/yourprofile) | [GitHub Profile](https://github.com/renaldi136)
+[LinkedIn Profile](https://linkedin.com/in/yourprofile) | [GitHub Profile](https://github.com/SilentVeil)
+
 
 ---
 *Note: This project was completed as part of practical cloud security training.*
