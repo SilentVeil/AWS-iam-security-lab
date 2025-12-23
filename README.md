@@ -19,9 +19,8 @@ Hands-on lab implementing AWS Identity and Access Management (IAM) security best
 - **Python** (boto3 for automation - optional)
 - **Terraform** (infrastructure as code - optional)
 
-## 📁 Repository Structure
-(Will be updated as files are added)*
 
+## 📁 Repository Structure
 
 ## 🚀 Implementation
 
