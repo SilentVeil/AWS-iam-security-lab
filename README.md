@@ -12,6 +12,7 @@ Hands-on lab implementing AWS Identity and Access Management (IAM) security best
 ## 📊 Architecture
 ![IAM Architecture Diagram](images/iam-architecture.png)
 
+
 ## 🛠️ Technologies & Services
 - **AWS IAM**
 - **AWS CLI** (for policy testing)
