@@ -73,7 +73,7 @@ Implementation of AWS Identity and Access Management (IAM) security best practic
 
 ## 👥 User & Group Management
 ### User Accounts
-![IAM Users List](screenshots/iam-users-groups.png)
+![IAM Users List](screenshots/iam-user-groups.png)
 *Pre-configured IAM users (user-1, user-2, user-3) for role assignment.*
 
 ### User Groups with Managed Policies
