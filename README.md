@@ -61,25 +61,68 @@ Designed policies that:
 3. **Permission Boundaries**: Limits maximum permissions
 4. **IAM Access Analyzer**: Tool for policy validation
 
-## 🔮 Future Enhancements
-- [ ] Integrate with AWS Organizations
-- [ ] Implement conditional policies with tags
-- [ ] Automate policy reviews with AWS Config
-- [ ] Add emergency break-glass procedures
 
-## 📸 Implementation Proof
-Screenshots of the implemented configuration are available in the [screenshots/](screenshots/) folder:
-- AWS Console configurations
-- Service dashboards
-- Security settings
+# 🔐 AWS IAM Security Lab: Role-Based Access Control Implementation
+
+## 🎯 Overview
+Implementation of AWS Identity and Access Management (IAM) security best practices including password policies, user groups, and role-based access control (RBAC).
+
+## 🔐 Password Policy Hardening
+![Enhanced Password Policy](screenshots/iam-password-policy.png)
+*Custom password policy enforcing 10-character minimum, complexity requirements, 90-day rotation, and prevention of password reuse.*
+
+## 👥 User & Group Management
+### User Accounts
+![IAM Users List](screenshots/iam-users-list.png)
+*Pre-configured IAM users (user-1, user-2, user-3) for role assignment.*
+
+### User Groups with Managed Policies
+![IAM User Groups](screenshots/iam-user-groups.png)
+*Role-based groups with pre-attached policies: EC2-Admin, EC2-Support, S3-Support.*
+
+### Group Membership Assignment
+![Add User to Group](screenshots/iam-add-user-to-group.png)
+*Adding users to groups to inherit permissions via RBAC model.*
+
+## 🧪 Permission Testing & Validation
+
+### user-1: S3 Support Role
+![S3 Access Success](screenshots/iam-user1-s3-access.png)
+*user-1 successfully accesses S3 buckets (S3-Support group permissions).*
+
+![EC2 Access Denied](screenshots/iam-user1-ec2-denied.png)
+*user-1 properly denied EC2 access (no EC2 permissions).*
+
+### user-3: EC2 Administrator Role
+![EC2 Admin Access](screenshots/iam-user3-ec2-access.png)
+*user-3 accesses EC2 instances with administrative privileges.*
+
+![Stop Instance Success](screenshots/iam-user3-stop-success.png)
+*user-3 successfully stops EC2 instance (EC2-Admin group permissions).*
+
+## 📋 RBAC Implementation Summary
+| User | Group | Permissions | Test Result |
+|------|-------|-------------|-------------|
+| user-1 | S3-Support | S3 read-only | ✅ S3 access granted<br>⛔ EC2 access denied |
+| user-2 | EC2-Support | EC2 read-only | ✅ EC2 view-only<br>⛔ Modify denied |
+| user-3 | EC2-Admin | EC2 full management | ✅ Instance stop/start |
+
+## 🏗️ Security Architecture
+
+## 📁 Repository Structure
+
+## 🎓 Skills Demonstrated
+- IAM Policy Design & Implementation
+- Role-Based Access Control (RBAC)
+- Principle of Least Privilege
+- Security Hardening (Password Policies)
+- Permission Testing & Validation
+- AWS Console Navigation & User Management
 
 ---
 
-## 👨‍💻 About the Author
-**Renaldi**  
-Cloud Security Learner | AWS Enthusiast  
-[LinkedIn Profile](https://linkedin.com/in/yourprofile) | [GitHub Profile](https://github.com/SilentVeil)
-
+**Renaldi** | Cloud Security Analyst  
+*IAM security implementation as part of AWS training.*
 
 ---
 *Note: This project was completed as part of practical cloud security training.*
